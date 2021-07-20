@@ -1,0 +1,167 @@
+By now,
+
+
+You must have got all the necessary software setup in your system.
+
+We would like you to start off with exploring your Operating System and the vast amount of functionalities provided by Linux environment. To do this, you can start off with the basics of Shell. We have curated a small list of commands that you can make yourself comfortable with:
+
+ls
+
+mkdir
+
+cat
+
+apt
+
+dpkg
+
+kill
+
+lsof
+
+netstat
+
+service vs systemctl
+
+vim vs nano
+
+sudo vs normal user
+
+sudo su
+
+
+Once you are done reading, here is a list of sample query that you can answer:
+
+What is the difference between ‘apt’ and ‘apt-get’?
+
+What is the difference between ‘apt-get update’ and ‘apt-get upgrade’?
+
+How to create a new user in the system?
+
+‘mkdir’ gives an error if the directory is already present, how can you fix it?
+
+What is .bashrc?
+
+How can we list out all the Environment Variables?
+
+How can we add a new Environment Variable?
+
+What is shell scripting?
+
+
+
+Shell : Reading CONCEPTS
+Sudo vs normal user - Sudo stands for SuperUser DO and is used to access restricted files and operations. By default, Linux restricts access to certain parts of the system preventing sensitive files from being compromised.
+The sudo command temporarily elevates privileges allowing users to complete sensitive tasks without logging in as the root user. 
+Example of a command is apt-get update.
+When the sudo command is used, a timestamp is entered in the system logs. The user can run commands with elevated privileges for a short time (default 15 minutes).
+Link - https://www.youtube.com/watch?v=mAKy7bcfvTg
+Sudo vs su - Both  su  and <strong>sudo</strong> elevate privileges assigned to the current user.
+The main difference between the two is that <strong>su</strong> requires the password of the target account, while <strong>sudo</strong> requires the password of the current user. Therefore, it is much safer to use <strong>sudo</strong> since it doesn’t include exchanging sensitive information.
+Su - : To move to another user and switch to that target user environment, use the <strong>su -</strong> command.
+Link : -  https://phoenixnap.com/kb/sudo-vs-su-differences
+Vim vs nano – Vim and Nano are completely different terminal text editors.
+Nano is simple, easy to use and master while Vim is powerful and tough to master.
+Netstat - Netstat command displays various network related information 
+# netstat -s : To list the statistics for all ports.
+Link : https://www.geeksforgeeks.org/netstat-command-linux/
+
+Lsof – Gives information to find out files which are opened by which process.
+lsof – u  username
+Lsof  -u ^root
+Link : - https://www.geeksforgeeks.org/lsof-command-in-linux-with-examples/
+
+Ls – Lists all files and folders
+ls –a – lists hidden files
+ls –l – lists list of files with detailed description
+ls –lS – lists files by size
+Link : - https://careerkarma.com/blog/linux-ls-command/
+Mkdir – 
+mkdir –v [directories] – Displays a message for a directory created
+(verbose)
+mkdir –p first/second/third – If first and second is not there it wil create it
+p for parent directory
+If not put p it will give a error
+Link: https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/
+
+Cat – cat command can display, combine and create new files.
+Cat [OPTIONS] [FILE_NAMES]
+
+cat name of file – Read the contents of file
+cat –n 1.txt – Will print the contents with line numbers
+cat 1.txt 2.txt – Will read both files
+cat 1.txt 2.txt > 3.txt – Will concatenate contents of both file in 3.txt
+cat > file1.txt – Will create a new file then write contents and enter CTRL+D
+cat >> file.txt – Will append contents to file.txt
+Link: - https://linuxize.com/post/linux-cat-command/
+
+Apt – Advanced package tool 
+apt-get is a command that helps in handling packages in linux.
+Handling – Installing, Searching, Updating
+
+Dpkg – debian package – package manager
+Package  manager is responsible for installing new software, upgrade software or remove software.
+Package – A collection of file bundled together and can be removed as a group.
+
+dpkg –i [package_name] – install a package
+ “      -l     ‘’                     - List a package
+“        -r     “                     - Remove a package
+“       -c   “                        - View the content of a package
+Link : https://www.tecmint.com/dpkg-command-examples/
+
+Kill – kill is a command used to terminate process
+kill command sends a signal to a process which terminates the process. 
+Link :  https://www.geeksforgeeks.org/kill-command-in-linux-with-examples/
+
+What is the difference between ‘apt’ and ‘apt-get’?
+apt-get update – It would update the repository
+apt update – Would give some additional information as well
+apt is more user friendly
+In apt while downloading something you can see the progress bar even
+
+What is the difference between ‘apt-get update’ and ‘apt-get upgrade’?
+apt-get update – Only updates the list of packages but not installs
+apt-get upgrade – After updating, this commands finally installs the updates
+
+How to create a new user in the system?
+Linux is a multi-user system, which means that more than one person can interact with the same system at the same time.
+sudo useradd username
+
+mkdir’ gives an error if the directory is already present, how can you fix it?
+Use –p flag
+mkdir –p first
+
+What is .bashrc?
+The .bashrc files is basically a file that is run whenever you open a new shell. People often use it to set up custom environment variables.
+It is a hidden file and can be seen using ls –a
+
+How can we list out all the Environment Variables?
+Using env command
+**Environment variables** are variables that contain values necessary to set up a shell environment. 
+e.g echo $PATH, echo $LANG
+Has global and local scope
+env lists out all global environment variable
+Add a Variable : A=10
+                           echo $A
+
+How can we add a new Environment Variable?
+Using the myvar=10
+echo $myvar
+
+What is shell scripting?
+A Shell provides you with an interface to the Unix system. It gathers input from you and executes programs based on that input. 
+Bourne Shell, C Shell
+
+Script is not a function. It is set of instructions to be executed and takes space in the directory.
+
+
+Assignment
+Count occurrences of character in a file using shell -https://stackoverflow.com/questions/1603566/count-occurrences-of-a-char-in-plain-text-file
+Owner’s permission - https://phoenixnap.com/kb/linux-file-permissions
+Add random 1000 lines in the file - https://www.linuxquestions.org/questions/linux-newbie-8/how-do-i-create-a-file-with-1000-lines-683916/
+Print top 50 lines of a file - head -15 /etc/passwd
+Add 5 files to the same folder (touch command) - https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/
+Find - https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/
+Diff - https://www.geeksforgeeks.org/diff-command-linux-examples/
+Shell Scripting Introduction - https://www.tutorialspoint.com/unix/unix-what-is-shell.htm
+ls vs lsof - ls lists all files and folders in a directory wheras lsof lists all open files which might be opened by any process

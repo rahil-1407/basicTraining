@@ -1,0 +1,11 @@
+Part 2 - Javascript Syntax
+
+loops - for / while
+conditional - if else / switch / ternary
+operators
+comments
+functions
+
+Sample Query: Write down some of the IMPORTANT reserved keywords that you came across while exploring?
+
+Functions can be Anonymus

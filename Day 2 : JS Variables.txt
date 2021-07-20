@@ -1,0 +1,53 @@
+Part 1 - Variables
+
+Data Types - string, boolean, number
+Array
+JS Object
+Sample Query: What kind of Data Structure you can relate JS Object with?
+
+const vs let vs var
+JS Object - Hash Table
+
+JavaScript Objects are Mutable.
+
+Objects are mutable: They are addressed by reference, not by value.
+
+const person = {
+firstName:"John",
+lastName:"Doe",
+age:50,
+eyeColor:"blue"
+}
+
+const x = person;
+x.age = 10; // Will change both x.age and person.age
+
+The object x is not a copy of person. It is person. Both x and person are the same object.
+
+Any changes to x will also change person, because x and person are the same object.
+
+In JavaScript, arrays always use numbered indexes.
+
+Review - Array and its internal functions (map, reduce, foreach etc)
+
+map - const a = [1,2,3,4,5]
+
+console.log(a.map(function(num){
+    return num*2
+}))
+.map() is a non-mutating method that creates a new array as opposed to mutating methods, which only make changes to the calling array.
+
+The reduce() method reduces the array to a single value.
+let numbers = [100,20,50,90]
+
+console.log(numbers.reduce(function(total,num) {
+    return total - num
+}))
+
+The forEach method passes a callback function for each element of an array
+let numbers = [100,20,50,90]
+
+console.log(numbers.forEach(function(num) {
+    console.log(num)
+}))
+https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/

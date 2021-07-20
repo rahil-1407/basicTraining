@@ -1,0 +1,32 @@
+Part 3: Helper Functions
+
+Array
+String
+
+Sample Query: If you follow the above links, you can see the use of the word ‘prototype’ what does it mean?
+
+The JavaScript array prototype constructor is used to allow to add new methods and properties to the Array() object.
+
+Syntax :
+Array.prototype.name = value
+
+Array.prototype.upperCase = function() {
+var i;
+for (i = 0; i < this.length; i++) {
+this[i] = this[i].toUpperCase();
+}
+};
+
+The prototype is an object that is associated with every functions and objects by default in JavaScript.
+
+function Student() {
+this.name = 'John';
+this.gender = 'Male';
+}
+
+var studObj1 = new Student();
+studObj1.age = 15;
+alert(studObj1.age); // 15
+
+var studObj2 = new Student();
+alert(studObj2.age); // undefined

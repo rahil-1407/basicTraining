@@ -1,0 +1,74 @@
+Part 1 - Basics
+Local & Remote
+init
+config
+clone
+fetch
+pull
+push
+Sample Query: Why git is one of the most popular VCS in the industry?
+
+Part 2 - Commit Lifecycle
+add
+commit
+reset
+rm
+amend
+Sample Query: What is Sha Hash?
+
+Part 3 - More than Basics
+diff
+log
+stash
+revert
+Sample Query: How git calculates differences? Hint: HEAD
+
+https://medium.com/mindorks/what-is-git-object-model-6009c271ca66
+
+https://www.crio.do/blog/what-is-git/?utm_source=Social&utm_medium=Social&utm_campaign=crio-social
+
+https://medium.com/swimm/a-visualized-intro-to-git-internals-objects-and-branches-68df85864037
+
+Git Reset - https://www.freecodecamp.org/news/save-the-day-with-git-reset/
+
+git rm - https://careerkarma.com/blog/git-rm/
+
+git amend - https://medium.com/@igor_marques/git-basics-adding-more-changes-to-your-last-commit-1629344cb9a8
+
+git diff - https://medium.com/mindorks/what-is-git-diff-git-branch-4bd9890d68b0
+
+git stash - https://opensource.com/article/21/4/git-stash
+
+git revert - https://stackoverflow.com/questions/19032296/how-to-use-git-revert
+
+git fetch - https://careerkarma.com/blog/git-fetch/
+
+SHA Hash - https://medium.com/@bencabanes/things-you-probably-didnt-know-about-git-f0fbdb86a071#:~:text=SHA1%20is%20a%20cryptographic%20hash,same%20output%20for%20same%20input.&text=These%20information%20are%20stores%20in,of%20your%20project%20file%20structure
+
+Review:
+any other VCS
+snapshot and repository
+revert
+stash
+force pull, force push
+
+Different types of VCS - https://serengetitech.com/tech/introduction-to-git-and-types-of-version-control-systems/
+Centralized Version control systems are - Microsoft Team Foundation Server (TFS) and SVN.
+Distributed VCS - Mercurial, Git and Bazaar
+
+Repository - A repository contains all of your project's files and each file's revision history.
+Snapshots, in git, are synonymous with “commits”. Every time you commit to a git repository, you are saving a snapshot of all the files in your repository.
+
+git push --force origin master - The --force option for git push allows you to override this rule: the commit history on the remote will be forcefully overwritten with your own local history.
+https://www.git-tower.com/learn/git/faq/git-force-push/
+
+Instead, it lets us fetch the changes from one remote branch to a different local branch. ... Just like git push --force allows overwriting remote branches, git fetch --force (or git pull --force ) allows overwriting local branches.
+https://www.freecodecamp.org/news/git-pull-force-how-to-overwrite-local-changes-with-git/
+
+Review - diff and patch
+
+GIT patch or GIT diff is used to share the changes made by you to others without pushing it to main branch of the repository. This way other people can check your changes from the GIT patch file you made and suggest the necessary corrections.
+
+git diff > chnge.patch - To make a patch files from the differences
+git format-patch master - To make a patch file
+git apply chnge.patch - To apply changes from patch file

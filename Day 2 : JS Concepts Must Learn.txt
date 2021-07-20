@@ -1,0 +1,70 @@
+Part 4: Concepts (Must Learn)
+
+eventloop
+variable scopes
+callback
+this
+try catch (error Handling)
+
+Sample Query: Can you write some sample codes for all these concepts?
+
+Callback Function :-
+setTimeout(function () {
+console.log("Hello World")
+}, 5000)
+
+this Keyword in JS
+
+Alone this refers to global object
+In a regular function also it refers to global object.
+In a method, it refers to the owner's object.
+https://www.youtube.com/watch?v=RwLVyats1qY
+
+try Catch - https://www.w3schools.com/js/js_errors.asp
+
+Scope of Variable is of 2 Types : Local and Global Scope
+
+var vs let vs const
+
+var - Function Scoped
+let / const - Block Scoped
+https://www.youtube.com/watch?v=XgSjoHgy3Rk
+
+Event Loop - https://docs.google.com/document/d/1O9C7v6b32Q6Zp8kbZtw-1LKZ8H4wKcyapwQ3dJIFX6o/edit#heading=h.ktyznagco2
+
+Review - variable scopes
+
+(function () {
+var a = b = 3
+})();
+
+console.log(a+" "+b)
+b becomes a global variable here and a is block scoped variable
+Above Function is Self Invoking Function
+
+Review - bind, apply, arrow function
+let name = {
+firstname : "Rahil",
+lastname : "Sinha"
+}
+
+//A common method
+let printFullName = function(hometown, state) {
+console.log(this.firstname+" "+this.lastname+ " " + hometown + " " +
+state)
+}
+
+let name2 = {
+    firstname : "Sachin",
+    lastname : "Tendulkar"
+}
+
+//function borrowing
+printFullName.call(name,"Hazaribagh","Jharkhand")
+
+//Take other arguments as array
+printFullName.apply(name2,["Mumbai","Maharastra"])
+
+// Makes a copy of the method
+let newMethod = printFullName.bind(name,"Hazaribagh", "Jharkhand")
+newMethod()

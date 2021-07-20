@@ -1,0 +1,44 @@
+2. What is the difference between the source and sh commands?
+source (or . ) - runs inside current shell and changes its attribute/environment.
+
+sh do fork and runs in a subshell and hence can't change attributes/environment.
+
+3. Create two files “a.txt” and “b.txt”. Write a command to get the difference between the contents in two files.
+cat > a.txt
+Gujarat
+Uttar Pradesh
+Kolkata
+Bihar
+Jammu and Kashmir
+Press Ctrl+D
+
+cat > b.txt
+Tamil Nadu
+Gujarat
+Andhra Pradesh
+Bihar
+Uttar pradesh
+Press Ctrl+D
+
+diff a.txt b.txt
+
+4. What is the difference between ls and lsof?
+ls lists all files present in the directory
+lsof lists all open files which are opened by any process
+
+5. Create directories ./hello/world (World dir is inside hello dir) using mkdir command where neither hello or world exists. It should be a single command without the use of &&. 
+mkdir -p -v ./hell/world
+
+6. How can you permanently set an environment variable using a bash terminal?
+ To set permanent environment variables for a single user, edit the .bashrc file:
+    sudo vi ~/.bashrc
+ Write a line for each variable you wish to add using the following syntax:
+    export NAME=VALUE
+ Save and exit the file. The changes are applied after you restart the shell. If you want to apply the changes during the current session, use the source command:
+    source ~/.bashrc
+
+7. You have some process running on a port in your system. How can you view and then kill the process from the terminal?
+To find out all the running process of specific port, just use the following command with option -i.
+To view process running: lsof -i:8080
+TO kill : kill -9 $(lsof -t -i:8080)
+-9 corresponds to the SIGKILL - terminate immediately/hard kill 
