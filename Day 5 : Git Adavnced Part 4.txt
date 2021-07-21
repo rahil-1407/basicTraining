@@ -1,0 +1,43 @@
+Part 4 - Branch Basics
+
+branch
+checkout
+cherry-pick
+tag
+
+Query: What exactly a branch mean? Is a branch a set of commits? Or is it a pointer?
+One more query: Can we add one more commit to a tag?
+
+https://learngitbranching.js.org/
+
+git branch - They are simply pointers to a specific commit -- nothing more.
+For now though, just remember that a branch essentially says "I want to include the work of this commit and all parent commits."
+
+git cherry-pick - git cherry-pick <Commit1> <Commit2> <...>
+It's a very straightforward way of saying that you would like to copy a series of commits below your current location (HEAD).
+
+git tag - https://www.youtube.com/watch?v=govmXpDGLpo
+Tagging in git refers to create specific points in history for your repository
+
+This is usually done to mark release points.
+2 types : annotated tag and lightweight tag
+
+git tag <Tag Name>
+git tag -a v1.1 -m "Version 1.1 released"
+git show <tag name>
+
+Push to remote git push origin v1.1
+git tag --delete <tag name>
+
+Delete in remote
+git push origin --delete v1.1
+
+Tag and commit-id at that point refer to the same state of repository
+
+We cannot checkout tags in git
+We create a branch from the tag and checkout the branch
+git checkout -b <branch-name> <tag-name>
+
+Can we add one more commit to a tag?
+No
+Delete the tag. Make a new branch then add commit and then add a new tag

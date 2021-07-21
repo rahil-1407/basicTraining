@@ -1,0 +1,59 @@
+HTTP Verbs
+HTTP vs HTTPS
+Session vs Cookies
+Request Lifecycle
+REST
+MVC
+Sample Query: What are the components of an HTTP Request?
+
+(2. )
+HTTP - It is a protocol for transferring files over the internet.
+When these request/response pairs are being sent, they use TCP/IP to reduce and transport information in small packets of binary sequences of ones and zeros.
+The text of that login page is included in the HTML response, but other parts of the page -- particularly its images and videos -- are requested by separate HTTP requests and responses.
+
+HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses.
+SSL - Secure Socket Layer - transmits private data securely over the Internet by encrypting it.
+
+(1.)
+HTTP Verbs - Methods -
+C - Create - POST Request
+R - Read - GET Request
+U - Update - PUT Request
+D - Delete - DELETE Request
+
+When a client needs to replace an existing Resource entirely, they can use PUT. When they're doing a partial update, they can use HTTP PATCH.
+
+Idempotent - clients can make that same call repeatedly while producing the same result.
+
+The difference between POST and PUT is that PUT requests are idempotent.
+
+(6.) MVC - https://www.youtube.com/watch?v=CGoI2-kIkkc
+
+(5.)
+REST - Representational State Transfer
+It means when a RESTful API is called, the server will transfer to the client a representation of the state of the requested resource.
+
+In general, an HTTP request is divided into 3 parts:
+
+A request line - HTTP-METHOD URI HTTP-PROTOCOL
+A set of header fields - Host: en.wikipedia.org
+A body, which is optional - {
+"Name": "Felipe Gavilán",
+"Age": 999
+}
+
+Review :- OPTIONS HTTP VERB, encryption, decryptions algorithms
+
+Options HTTP Method - The HTTP OPTIONS method is used to describe the communication options for the target resource.
+curl -i -X OPTIONS http://localhost:8080/SpringRestExample/api/rest/employee-management/employees/
+
+Response:
+
+status# HTTP/1.1 200 OK
+Server Apache-Coyote/1.1
+Content-Length 0
+Date Thu, 02 May 2019 10:41:02 GMT
+Allow GET,POST,OPTIONS
+
+https://medium.com/searchencrypt/what-is-encryption-how-does-it-work-e8f20e340537
+An encryption key is typically a random string of bits generated specifically to scramble and unscramble data. Encryption keys are created with algorithms designed to ensure that each key is unique and unpredictable. ... Symmetric, or secret key encryption, uses a single key for both encryption and decryption.

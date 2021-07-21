@@ -1,0 +1,7 @@
+Part 8 - Best Practices
+
+What is a branching strategy? Why should we create a feature branch?
+
+What is your responsibility as a team member when you work with multiple team members?
+
+Branches in Git help the team, which are in different parts of the world, work independently on independent features. Branches in GitHub (and Git) allow you to take the original codebase, create an exact replica of it, make changes, and then submit your changes to be merged into the original code base.

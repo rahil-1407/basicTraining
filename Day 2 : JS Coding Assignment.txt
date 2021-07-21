@@ -1,0 +1,8 @@
+Here is the link to your assignment for JavaScript Basics: Assignment. Your submission would be in the following manner:
+
+Fork the Codepen link after signing up on Codepen.
+
+Submit back your forked Codepen's link with your Status Email
+
+https://codepen.io/rahil-1407/pen/RwVZRva
+Codepen - Login with your Github

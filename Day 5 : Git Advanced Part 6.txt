@@ -1,0 +1,24 @@
+Part 6 - Rebasing Again
+squash
+reword
+edit
+Query: Why sometimes a negation(~) and other times a cap(^)?
+
+git squash - Assume that you have a series of n commits. By squashing you can make all the n-commits to a single commit.
+
+git rebase -i HEAD~3
+i stands for interactive
+
+git reword - Edit the commit message of your earlier commits
+
+git edit - https://www.bryanbraun.com/2019/02/23/editing-a-commit-in-an-interactive-rebase//
+
+Why sometimes a negation(~) and other times a cap(^)?
+Tilde - Use ~ most of the time — to go back a number of generations, usually what you want
+Caret - Use ^ on merge commits — because they have two or more (immediate) parents
+
+~2 means up two levels in the hierarchy, via the first parent if a commit has more than one parent
+
+^2 means the second parent where a commit has more than one parent (i.e. because it's a merge)
+
+Visualizing Git - http://git-school.github.io/visualizing-git/

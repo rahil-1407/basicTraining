@@ -1,0 +1,7 @@
+Part 3 - Dessert (is Optional)
+Detailed working of ‘Login with ...’
+Remote Procedure Call
+
+https://medium.com/@bitshadow/how-basic-http-authentication-and-session-works-d29af9caec31
+
+RPC is a protocol that one program can used to request a service from a program located in another computer on a network without having to understand the network details.

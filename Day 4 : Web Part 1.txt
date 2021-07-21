@@ -1,0 +1,52 @@
+Part 1 - Starters
+
+Authentication and Authorization
+Client-Server Architecture
+Distributed Architecture
+Application Server vs Web Server
+
+Sample Query: List out a few authentication mechanisms that you have ever come across? Hint: ‘Login with …’
+
+In authentication process, the identity of users are checked . Authorization gives those users permission to access a resource.
+
+First Authentication is done then authorization.
+Popular authentication techniques are - Password-based authentication, Passwordless based authentication like magic links OTP, Social Authentication, Biometrics
+
+Popular Authorization Techniques are - JWT , SAML Authorization
+
+Client-Server Architecture
+User enters a URL in browser. Browser requests the DNS server .
+DNS (Domain Name System) responds browser with IP Address of the Web Server
+Browser sends a HTTP request to the Web server
+Web Server sends the correct files
+Browser loads the files into it
+
+Distributed System
+
+A distributed system in its most simplest definition is a group of computers working together as to appear as a single computer to the end-user.
+
+These machines have a shared state, operate concurrently and can fail independently without affecting the whole system’s uptime.
+
+NO Shared Memory
+We call them nodes connected through network
+We achieve Horizontal scaling
+https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/
+
+Web Server - Apache HTTP server, Nginx
+Application Server - Apache Tomcat
+
+Tasks of Application Server :-
+Transaction management
+Security
+
+Review - Application Server vs Web Server, Oauth
+
+OAuth 2.0 is a complete redesign from OAuth 1.0. This blog only applies to OAuth 2.0, since OAuth 1.0 is deprecated.
+OAuth 2.0 is faster and easier to implement.
+https://www.youtube.com/watch?v=3pZ3Nh8tgTE
+
+Application Server Vs Web Server
+The main difference between Web server and application server is that web server is meant to serve static pages e.g. HTML and CSS, while Application Server is responsible for generating dynamic content by executing server side code e.g. JSP, Servlet or EJB.
+While a web server handles mainly HTTP protocols, the application server deals with several different protocols, including, but not limited, to HTTP.
+
+The Web server's main job is to display the site content and the application server is in charge of the logic, the interaction between the user and the displayed content. The application server is working in conjunction with the web server, where one displays and the other one interacts.

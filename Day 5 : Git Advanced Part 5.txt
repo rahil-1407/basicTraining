@@ -1,0 +1,21 @@
+Part 5 - Branching Nightmares
+
+merge
+rebase
+
+Query: What is Conflict?
+One more query: What changes for a commit, when you rebase or merge?
+
+Merging - Merging in Git creates a special commit that has two unique parents.
+
+Rebase - Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else. The advantage of rebasing is that it can be used to make a nice linear sequence of commits.
+
+conflict - A merge conflict is an event that occurs when Git is unable to automatically resolve differences in code between two commits.When all the changes in the code occur on different lines or in different files, Git will successfully merge commits without your help.
+
+Review :- create a reopsitory with 3 commits in master
+then 7 commits in feature brnch
+then 7 more commits in master branch
+
+then try to rebase and also try to merge
+
+https://medium.com/@harishlyadav/when-to-use-git-rebase-explained-3c8192cba5c7
