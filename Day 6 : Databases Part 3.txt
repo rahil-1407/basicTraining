@@ -1,0 +1,9 @@
+Part 3 - Database Designing
+
+Normalization
+
+Relationships
+
+https://www.javatpoint.com/types-of-relationship-in-database-table#:~:text=A%20relational%20database%20collects%20different,Oracle%20Database%2C%20MYSQL%2C%20etc
+
+https://www.geeksforgeeks.org/normal-forms-in-dbms/

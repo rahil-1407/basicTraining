@@ -1,0 +1,33 @@
+Part 2 - SQL
+
+DDL - CREATE, ALTER, DROP, TRUNCATE, RENAME
+
+DQL - SELECT
+
+DML - INSERT, UPDATE, DELETE
+
+DDL is Data Definition Language which is used to define data structures. For example: create table, alter table are instructions in SQL. DML: DML is Data Manipulation Language which is used to manipulate data itself. For example: insert, update, delete are instructions in SQL.
+
+The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+
+Truncate preserves the structure of the table for future use, unlike drop table where the table is deleted with its full structure.
+
+Change the name of column NAME to FIRST_NAME in table Student.
+ALTER TABLE Student RENAME COLUMN NAME TO FIRST_NAME;
+
+The SELECT statement is used to select data from a database.
+The data returned is stored in a result table, called the result-set.
+SELECT column1, column2, ...
+FROM table_name;
+
+The INSERT INTO statement is used to insert new records in a table.
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+The DELETE statement is used to delete existing records in a table.
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+
+The UPDATE statement is used to modify the existing records in a table.
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;

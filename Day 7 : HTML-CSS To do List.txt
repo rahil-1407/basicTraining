@@ -1,0 +1,21 @@
+We are going to create a single HTML page where:
+
+An end-user can add a todo item.
+
+See the list of todos.
+
+Update the status of a todo item.
+
+Remove an item from the list
+
+To achieve this, you need to take care of:
+
+Proper input field types in your form
+
+Validations
+
+Your form fields are cleared once an item is added.
+
+Removing item updates the page, and the item is no longer visible
+
+Note: You need to use plain and simple Javascript to add functionalities to your page. No use of AJAX or JQuery expected.

@@ -1,0 +1,37 @@
+Part 1 - Basics
+
+Terminologies: Database, Table, User, Schema, etc
+
+Datatype
+
+Keywords
+
+Databases make data management easy. Database is a collectionn of data.
+A table consists of rows and columns.
+They directly interact with the database by means of query language like SQL.
+
+A database schema is the skeleton structure that represents the logical view of the entire database.
+
+A schema is a named collection of tables.PostgreSQL statement CREATE SCHEMA creates a schema.
+CREATE SCHEMA name;
+https://www.tutorialspoint.com/postgresql/postgresql_schema.htm
+
+Data type - CHAR VARCHAR Boolean int
+The only difference between TEXT and VARCHAR(n) is that you can limit the maximum length of a VARCHAR column, for example, VARCHAR(255) does not allow inserting a string more than 255 characters long.
+
+In SQL, the keywords are the reserved words like SELECT
+
+Review :- metadata, user, schema ?????
+
+MetaData in DBMS :-
+Relational databases store and provide access not only data but also metadata in a structure called data dictionary or system catalog. It holds information about:
+
+tables,
+columns,
+data types,
+table relationship,
+constraints etc.
+
+In Oracle, users and schemas are essentially the same thing. You can consider that a user is the account you use to connect to a database, and a schema is the set of objects (tables, views, etc.) that belong to that account.
+
+user is an alias for current_user in POstgreSQL

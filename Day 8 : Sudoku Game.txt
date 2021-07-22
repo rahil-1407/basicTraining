@@ -1,0 +1,13 @@
+Looks like this will be an exciting Day!
+
+We have planned something great for you. From today, you will create a small Game, to showcase your understanding of front-end functionality you learned so far. You are expected to imagine a super cool ninja interface(no computer bot, artificial intelligence, etc. expected) where an online gamer can play his heart out.
+
+So what are we waiting for? Start developing now!
+
+Name
+
+Game
+
+Rahil Sinha
+
+Sudoku

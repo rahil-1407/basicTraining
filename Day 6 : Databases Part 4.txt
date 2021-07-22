@@ -1,0 +1,70 @@
+Part 4 - SQL Extended
+
+Functions
+
+Clauses
+
+Constraints
+
+Joins
+
+Subquery
+
+Indexes
+
+View
+
+SQL aggregate functions return a single value, calculated from values in a column.
+
+Useful aggregate functions:
+
+AVG() - Returns the average value
+COUNT() - Returns the number of rows
+FIRST() - Returns the first value
+LAST() - Returns the last value
+MAX() - Returns the largest value
+MIN() - Returns the smallest value
+SUM() - Returns the sum
+
+Clauses in sql
+Group By - SQL GROUP BY statement is used to arrange identical data into groups.
+Having - Having is used in a GROUP BY clause. If you are not using GROUP BY clause then you can use HAVING function like a WHERE clause.
+
+Order By - The ORDER BY clause sorts the result-set in ascending or descending order.
+https://www.javatpoint.com/dbms-sql-
+
+Constraints - NOT NULL, Primary Key, Foreign Key, Default, Unique, Default
+
+Joins - Cross Product + Select
+Natural Join
+Self Join
+Equi Join
+Left Outer Join
+Right Outer Join
+
+Subquery -
+SELECT Max(Salary) from Emp WHERE Salary <> (SELECT Max(Salary) from emp)
+
+Indexes are special lookup tables that the database search engine can use to speed up data retrieval. Simply put, an index is a pointer to data in a table.
+
+A view can draw data from several different tables and present it as a single table, turning multi-table queries into single-table queries against the view. Views can give a user a "personalized" view of the database structure, presenting the database as a set of virtual tables that make sense for that user.
+
+It does not hold any data and does not exist physically in the database.
+
+Execution Sequence :
+1. FROM AND JOIN
+2. WHERE
+3. GROUP BY
+4. HAVING
+5. SELECT
+6. DISTINCT
+7. ORDER BY
+
+Nth highest salary :-
+select * from(
+select ename, sal, dense_rank()
+over(order by sal desc)r from Employee)
+where r=&n;
+
+To find to the 2nd highest sal set n = 2
+To find 3rd highest sal set n = 3 and so on.
